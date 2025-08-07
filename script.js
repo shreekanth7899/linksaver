@@ -43,7 +43,7 @@ function loadLinks() {
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
-    deleteBtn.classList.add("delete-btn");
+    deleteBtn.className = "delete-btn";
     deleteBtn.onclick = () => deleteLink(index);
 
     li.appendChild(a);
@@ -54,7 +54,7 @@ function loadLinks() {
 
 function deleteLink(index) {
   const links = JSON.parse(localStorage.getItem("savedLinks")) || [];
-  links.splice(index, 1); // Remove 1 item at given index
+  links.splice(index, 1); // Remove 1 item at the given index
   localStorage.setItem("savedLinks", JSON.stringify(links));
   loadLinks(); // Refresh the list
 }
