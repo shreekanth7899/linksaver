@@ -52,6 +52,9 @@ ul {
 li {
   padding: 10px;
   border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a {
@@ -63,8 +66,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .delete-btn {
-  margin-left: 10px;
   padding: 5px 10px;
   background-color: #dc3545;
   color: white;
